@@ -37,7 +37,7 @@ for state in data["data"]:
 
 ind=[x-.3 for x in np.arange(len(names))]
 ind2=[x+.3 for x in ind]
-plt.figure(figsize=(20,8))
+plt.figure(figsize=(20,6))
 p1 = plt.bar(ind, states_work, 0.3)
 p2 = plt.bar(ind,states_vac , 0.3,bottom=states_work)
 
@@ -54,7 +54,7 @@ plt.legend((p1[0], p2[0],p3[0], p4[0]), ('Working - By State', ' Vacancies - By 
 plt.show()
 
 
-plt.figure(figsize=(20,8))
+plt.figure(figsize=(20,6))
 plt.scatter(range(len(names)),tots_sp)
 plt.xticks(ind, names,rotation='vertical')
 plt.xlabel("State")
